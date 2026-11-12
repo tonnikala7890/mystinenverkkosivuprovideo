@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11142b">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Mystinen Valotemppeli – O järjestö</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="kuvake-192.png">
+    <script src="pwa.js" defer></script>
+    <script src="salaisuus.js" defer></script>
+    <script src="portaali.js" defer></script>
+    <script src="valotemppeli.js" defer></script>
+  </head>
+  <body class="light-temple-page">
+    <main class="light-temple-main">
+      <a class="button light-temple-back" href="index.html">← Takaisin etusivulle</a>
+      <section class="light-portal-console" data-portal-console aria-labelledby="portal-title">
+        <div class="light-temple-stars" aria-hidden="true"></div>
+        <p class="light-temple-eyebrow">ERILLINEN PORTAALIALUE · PÄÄSY OMALTA SIVULTA</p>
+        <h1 id="portal-title">Varoitus: tuntematon valokäytävä</h1>
+        <p class="light-temple-intro">Portaali johtaa mystiseen Valotemppeliin. Temppelin keskellä lepää miekka, jonka voimaa ei ole vielä tutkittu.</p>
+
+        <div class="portal-warning-grid" aria-label="Portaalin turvallisuusvaroitukset">
+          <p><span aria-hidden="true">!</span> Varoitus: siirtymä käynnistää valosäteen</p>
+          <p><span aria-hidden="true">!</span> Älä koske temppelin miekkaan</p>
+          <p><span aria-hidden="true">!</span> Räjähdys ei ole vielä käytössä</p>
+        </div>
+
+        <div class="laser-chamber" data-laser-chamber>
+          <div class="laser-emitter" aria-hidden="true"><span></span></div>
+          <div class="laser-beam" aria-hidden="true"></div>
+          <div class="portal-rings" aria-hidden="true"><span></span><i></i></div>
+          <button class="portal-activation-button" data-activate-portal type="button">
+            <span class="portal-button-warning" aria-hidden="true">!</span>
+            <span>AKTIVOI VALOPORTAALI</span>
+            <small>VAROITUS · SIIRTYMÄ KÄYNNISTYY</small>
+          </button>
+        </div>
+        <p class="light-portal-status" data-portal-status role="status" aria-live="polite">Portaali on suljettu. Aktivoi se vain, jos haluat siirtyä Valotemppeliin.</p>
+      </section>
+
+      <section class="light-temple-arrival" data-light-temple hidden aria-labelledby="light-temple-title">
+        <div class="temple-light-shaft" aria-hidden="true"></div>
+        <div class="temple-pillar temple-pillar-left" aria-hidden="true"></div>
+        <div class="temple-pillar temple-pillar-right" aria-hidden="true"></div>
+        <header class="light-temple-story">
+          <p class="light-temple-eyebrow">PORTAALIN TOISELLA PUOLELLA</p>
+          <h1 id="light-temple-title">Mystinen Valotemppeli</h1>
+          <p>Kultaiset säteet valaisevat muinaisen temppelin. Sen keskellä kohoaa koskematon miekka.</p>
+        </header>
+        <div class="light-sword-altar">
+          <div class="light-altar-glow" aria-hidden="true"></div>
+          <button class="light-sword" data-light-sword type="button" aria-label="Kosketa temppelin keskellä lepäävää miekkaa">
+            <svg viewBox="0 0 120 260" role="img" aria-labelledby="sword-title sword-description">
+              <title id="sword-title">Valotemppelin miekka</title>
+              <desc id="sword-description">Kultainen maaginen miekka, joka lepää kivijalustalla.</desc>
+              <path class="sword-blade" d="M60 12 78 151 60 177 42 151Z"/>
+              <path class="sword-rune" d="m60 55 5 17-5 12-5-12Z"/>
+              <path class="sword-crossguard" d="M24 158Q60 143 96 158L88 174Q60 164 32 174Z"/>
+              <path class="sword-grip" d="M52 170h16v47H52z"/>
+              <path class="sword-hilt" d="m60 204 10 13-10 25-10-25z"/>
+              <circle class="sword-jewel" cx="60" cy="158" r="7"/>
+            </svg>
+          </button>
+          <div class="sword-altar" aria-hidden="true"><span></span></div>
+        </div>
+        <p class="sword-warning">VAROITUS · MIEKAN KOSKETUS AVAA REITIN KATAKOMBEIHIN</p>
+        <p class="sword-status" data-sword-status role="status" aria-live="polite">Koske miekkaan aloittaaksesi matkan mystisiin katakombeihin.</p>
+        <a class="button light-temple-back" href="index.html">Palaa etusivulle</a>
+      </section>
+
+      <section class="catacombs-stage" data-catacombs-stage hidden aria-labelledby="catacombs-title">
+        <div class="catacombs-depth" aria-hidden="true"></div>
+        <header class="catacombs-header">
+          <div>
+            <p class="light-temple-eyebrow">MYSTINEN ALAMAAILMA · 04:17</p>
+            <h1 id="catacombs-title">Valon katakombit</h1>
+          </div>
+          <button class="catacombs-return" data-catacombs-return type="button">Palaa temppeliin</button>
+        </header>
+
+        <div class="catacombs-scene" data-catacombs-scene>
+          <div class="catacombs-arch catacombs-arch-back" aria-hidden="true"></div>
+          <div class="catacombs-arch catacombs-arch-front" aria-hidden="true"></div>
+          <div class="catacombs-lantern lantern-left" aria-hidden="true"><span></span></div>
+          <div class="catacombs-lantern lantern-right" aria-hidden="true"><span></span></div>
+          <div class="catacombs-floor" aria-hidden="true"></div>
+
+          <div class="catacombs-secrets" role="group" aria-label="Katakombien salaisuudet">
+            <p class="catacombs-secret-count" data-secret-count role="status" aria-live="polite">Salaisuudet löydetty: 0 / 3</p>
+            <button class="catacomb-secret secret-left" data-catacomb-secret="lyhty" type="button" aria-label="Tutki vasemman seinän valoarpaa" aria-pressed="false"><span aria-hidden="true"></span></button>
+            <button class="catacomb-secret secret-center" data-catacomb-secret="riimu" type="button" aria-label="Tutki keskimmäistä muinaista riimua" aria-pressed="false"><span aria-hidden="true"></span></button>
+            <button class="catacomb-secret secret-right" data-catacomb-secret="kristalli" type="button" aria-label="Tutki oikean puolen kristallia" aria-pressed="false"><span aria-hidden="true"></span></button>
+          </div>
+
+          <button class="catacombs-enter-room" data-enter-turkey type="button">AVAA KALKKUNAN KAMMIO</button>
+          <p class="catacombs-hint" data-catacombs-status role="status" aria-live="polite">Tutki seinien salaisuudet ja jatka sitten kalkkunan kammioon.</p>
+        </div>
+
+        <section class="turkey-room" data-turkey-room hidden aria-labelledby="turkey-room-title">
+          <div class="turkey-room-stars" aria-hidden="true"></div>
+          <p class="light-temple-eyebrow">KATAKOMBIEN SALAINEN KAMMIO</p>
+          <h2 id="turkey-room-title">Kalkkunan huone</h2>
+          <p class="turkey-room-intro" data-turkey-intro>Huoneen keskellä seisoo hiljainen kalkkuna. Ruosteinen vipu odottaa erillisessä jalustassa.</p>
+          <div class="turkey-room-floor" aria-hidden="true"></div>
+          <div class="turkey-lever-plinth" data-turkey-plinth>
+            <div class="turkey-room-lever" aria-hidden="true"><span></span><i></i></div>
+            <button class="adventure-action turkey-lever-button" data-turkey-lever type="button">VEDÄ KALKKUNAVIPUA</button>
+          </div>
+          <button class="turkey-character" data-turkey-character type="button" aria-label="Klikkaa kalkkunaa" hidden>
+            <span class="turkey-aura" aria-hidden="true"></span>
+            <span class="temple-turkey" aria-hidden="true">
+              <span class="turkey-tail turkey-tail-one"></span><span class="turkey-tail turkey-tail-two"></span><span class="turkey-tail turkey-tail-three"></span>
+              <span class="turkey-body"></span><span class="turkey-neck"></span><span class="turkey-head"></span><span class="turkey-beak"></span><span class="turkey-wattle"></span><span class="turkey-eye"></span><span class="turkey-feet"></span>
+            </span>
+            <span class="turkey-click-prompt">KLIKKAAMALLA KALKKUNAA TAPAHTUU JOTAIN</span>
+          </button>
+          <div class="turkey-quote" data-turkey-quote role="status" aria-live="polite">Kukaan ei tiedä, miksi kalkkuna on täällä.</div>
+          <p class="turkey-click-count" data-turkey-count aria-live="polite"></p>
+          <section class="secret-code-stage" data-secret-code-stage hidden aria-labelledby="secret-code-title">
+            <p class="light-temple-eyebrow">KAMMIO MURTUU TOMUKSI</p>
+            <h3 id="secret-code-title">Salainen koodi</h3>
+            <p data-code-countdown role="status" aria-live="polite">Koodi katoaa näkyvistä kolmen sekunnin kuluttua.</p>
+            <output class="secret-code" data-secret-code>POLLO-731</output>
+            <button class="adventure-action copy-secret-code" data-copy-code type="button">KOPIOI KOODI JA JATKA</button>
+            <p class="code-copy-status" data-code-copy-status role="status" aria-live="polite"></p>
+          </section>
+
+          <section class="three-doors-stage" data-three-doors hidden aria-labelledby="three-doors-title">
+            <p class="light-temple-eyebrow">KOLME OVEA · VALITSE REITTI</p>
+            <h3 id="three-doors-title">Salainen ovikäytävä</h3>
+            <div class="three-door-list" role="group" aria-label="Valitse yksi kolmesta ovesta">
+              <button class="three-door" data-door="1" type="button" aria-pressed="false"><span>01</span><strong>Tuhkaovi</strong></button>
+              <button class="three-door" data-door="2" type="button" aria-pressed="false"><span>02</span><strong>Kuuovi</strong></button>
+              <button class="three-door" data-door="3" type="button" aria-pressed="false"><span>03</span><strong>Pöllöovi</strong></button>
+            </div>
+            <label class="door-code-label" for="door-code">Liitä kopioitu koodi valitsemaasi oveen</label>
+            <input id="door-code" class="door-code-input" data-door-code type="text" autocomplete="off" spellcheck="false" placeholder="Liitä koodi tähän">
+            <button class="adventure-action enter-door-button" data-enter-door type="button">AVAA OVI KOODILLA</button>
+            <p class="door-status" data-door-status role="status" aria-live="polite">Valitse ovi ja syötä siihen kopioitu koodi.</p>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <div class="city-teleport-overlay" data-city-teleport hidden aria-hidden="true">
+      <video class="city-teleport-video" data-city-teleport-video muted playsinline preload="auto" aria-hidden="true">
+        <source src="assets/portal-arrival.mp4" type="video/mp4">
+      </video>
+      <div class="city-teleport-orbit city-teleport-orbit-one"></div>
+      <div class="city-teleport-orbit city-teleport-orbit-two"></div>
+      <div class="city-teleport-core"></div>
+      <p data-city-teleport-label aria-live="polite">Valonsäde avaa tien Valotemppeliin</p>
+    </div>
+    <section class="owl-ending" data-owl-ending hidden aria-label="Pieni pöllö kotipuussaan">
+      <div class="owl-ending-frame">
+        <button class="owl-tree-trigger" data-owl-tree-trigger type="button" aria-label="Avaa pöllöpuu">
+          <img class="owl-ending-image" src="assets/owl-tree-night.png" alt="">
+        </button>
+      </div>
+      <div class="owl-journey-stage" data-owl-journey-stage hidden>
+        <video class="owl-journey-video" data-owl-journey-video playsinline preload="auto" aria-label="Pöllöpuun äänellinen animaatio">
+          <source src="assets/owl-tree-journey.mp4" type="video/mp4">
+          Selaimesi ei tue videon toistamista.
+        </video>
+        <p class="owl-journey-status" data-owl-journey-status role="status" aria-live="polite" hidden></p>
+        <div class="owl-cottage-screen" data-owl-cottage-screen hidden>
+          <div class="owl-cottage-frame">
+            <img class="owl-cottage-image" src="assets/owl-cottage.png" alt="Pöllö istuu lämpimässä puumökissä tulen äärellä">
+          </div>
+        </div>
+        <div class="owl-cottage-hotspots" data-owl-cottage-hotspots hidden>
+          <div class="owl-cottage-frame">
+            <button class="owl-cottage-lever" data-owl-cottage-lever type="button" aria-label="Vedä pöllömökin vipua"></button>
+            <button class="owl-cottage-book" data-owl-cottage-book type="button" aria-label="Avaa salainen loistava kirja"><span aria-hidden="true">✦<br>📖</span></button>
+          </div>
+        </div>
+        <video class="owl-lever-video" data-owl-lever-video playsinline preload="auto" aria-label="Pöllömökin vivun äänellinen animaatio" hidden>
+          <source src="assets/owl-cottage-lever.mp4" type="video/mp4">
+          Selaimesi ei tue videon toistamista.
+        </video>
+        <p class="owl-lever-status" data-owl-lever-status role="status" aria-live="polite" hidden></p>
+        <video class="owl-book-video" data-owl-book-video playsinline preload="auto" aria-label="Salaisen kirjan äänellinen animaatio" hidden>
+          <source src="assets/owl-book-portal.mp4" type="video/mp4">
+          Selaimesi ei tue videon toistamista.
+        </video>
+        <p class="owl-book-status" data-owl-book-status role="status" aria-live="polite" hidden></p>
+      </div>
+    </section>
+  </body>
+</html>

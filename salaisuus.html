@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#381019">
+    <title>Salaisuudet – Salainen verkkosivu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-secret-page="game">
+    <main class="landing">
+      <section class="content-card secret-card" aria-labelledby="page-title">
+        <h1 id="page-title">Onnittelut, löysit salaisuuden!</h1>
+        <img
+          class="fox-image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAhc4WKEVdlc5BQjnimo7fIbY6F8r_T3OLhaZmn55CQ&amp;s=10"
+          alt="Kettu">
+        <p>Haluatko etsiä lisää salaisuuksia? Aktivoi salainen modi ja löydä kaikki 10 piilotettua merkkiä eri sivuilta.</p>
+        <div class="secret-mode-controls">
+          <button class="button" type="button" data-mode-on>Aktivoi salainen modi</button>
+          <button class="button button-secondary" type="button" data-mode-off>Poista salainen modi käytöstä</button>
+        </div>
+        <p class="secret-progress" data-progress aria-live="polite">Salainen modi ei ole päällä.</p>
+        <a class="button" href="index.html">Takaisin etusivulle</a>
+      </section>
+    </main>
+    <script src="salaisuus.js" defer></script>
+  </body>
+</html>

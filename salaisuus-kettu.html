@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#381019">
+    <title>Salainen palkinto – Salainen verkkosivu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-secret-page="reward">
+    <main class="landing">
+      <section class="content-card secret-card fox-reward-card" aria-labelledby="page-title">
+        <h1 id="page-title">Salainen kettusivu!</h1>
+        <img
+          class="fox-image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAhc4WKEVdlc5BQjnimo7fIbY6F8r_T3OLhaZmn55CQ&amp;s=10"
+          alt="Kettu">
+        <p class="reward-countdown" data-countdown aria-live="polite">Ladataan...</p>
+        <form class="secret-code-form" data-kettu-form hidden>
+          <label class="kettu-entry" for="kettu-entry">Kirjoita tähän sana <strong>kettu</strong>:</label>
+          <input class="kettu-input" id="kettu-entry" data-kettu-input type="text" placeholder="Kirjoita kettu tähän" autocomplete="off" spellcheck="false" aria-describedby="kettu-feedback">
+          <button class="button" type="submit">Avaa salainen poro</button>
+        </form>
+        <p class="reward-countdown" id="kettu-feedback" data-kettu-feedback aria-live="polite" hidden></p>
+        <button class="reward-reindeer-trigger" data-reward-reindeer-trigger type="button" aria-label="Paina poroa avataksesi seuraavan salaisuuden" hidden>
+          <img
+            class="reward-reindeer"
+            src="https://paliskunnat.fi/poro/wp-content/uploads/2021/03/Poro_Rangifer_tarandus_tarandus.jpg"
+            alt="Salainen poro">
+        </button>
+        <a class="button mystic-reindeer-reveal" data-mystic-reindeer-reveal href="mystinen-poro.html" hidden>Mystinen poro</a>
+        <a class="button" data-return href="salaisuus.html" hidden>Takaisin salaisuussivulle</a>
+      </section>
+    </main>
+    <script src="salaisuus.js" defer></script>
+  </body>
+</html>

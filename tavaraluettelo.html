@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#381019">
+    <title>Tavaraluettelo – Salainen verkkosivu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-secret-page="inventory">
+    <main class="landing">
+      <section class="content-card inventory-card" aria-labelledby="page-title">
+        <h1 id="page-title">Tavaraluettelo</h1>
+        <div class="inventory-bag">
+          <div class="inventory-slots">
+            <p class="inventory-empty" data-inventory-empty>Tavaraluettelo on tyhjä</p>
+            <ul class="inventory-list" data-inventory-list aria-live="polite"></ul>
+          </div>
+        </div>
+        <div class="inventory-actions">
+          <a class="button" href="kauppa.html">Avaa kauppa</a>
+          <a class="button button-secondary" href="index.html">Takaisin etusivulle</a>
+        </div>
+      </section>
+    </main>
+    <script src="salaisuus.js" defer></script>
+  </body>
+</html>

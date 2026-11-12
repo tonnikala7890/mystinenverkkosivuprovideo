@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#381019">
+    <title>Kauppa – Salainen verkkosivu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="landing">
+      <nav class="actions" aria-label="Sivuston valikko">
+        <a class="button button-secondary" href="index.html">Etusivu</a>
+        <a class="button" href="kauppa.html" aria-current="page">Kauppa</a>
+      </nav>
+      <section class="content-card shop-card" aria-labelledby="page-title">
+        <div class="shop-emblem" aria-hidden="true">✦</div>
+        <p class="shop-eyebrow">SALAINEN VERKKOSIVU</p>
+        <h1 id="page-title">Kauppa</h1>
+        <p>Käytä kolikoita kerätäksesi salaisia aarteita tavaraluetteloosi. Tässä kaupassa ei käytetä oikeaa rahaa.</p>
+        <p class="shop-balance" data-shop-balance aria-live="polite"></p>
+        <p class="shop-hint">Saat 5 kolikkoa jokaisesta löytämästäsi salaisuusmerkistä. Aloitussaldosi on 20 kolikkoa.</p>
+        <div class="shop-products" data-shop-products></div>
+        <p class="shop-status" data-shop-status role="status" aria-live="polite"></p>
+        <a class="button" href="index.html">Takaisin etusivulle</a>
+      </section>
+    </main>
+    <script src="salaisuus.js" defer></script>
+  </body>
+</html>

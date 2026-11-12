@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#381019">
+    <title>Salainen huone – Salainen verkkosivu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-secret-page="secret-room">
+    <main class="landing">
+      <section class="content-card secret-room-card" aria-labelledby="page-title">
+        <div class="room-glow" aria-hidden="true"></div>
+        <p class="room-eyebrow">Ovi aukesi</p>
+        <h1 id="page-title">Salainen huone</h1>
+        <p>Hienosti löydetty! Avaimen takana odottaa vielä lisää salaisuuksia.</p>
+        <div class="room-stars" aria-hidden="true">✦　✧　✦　✧　✦</div>
+        <form class="massi-code-form" data-massi-form>
+          <label for="massi-code">Huoneessa on toinen ovi. Tiedätkö koodin?</label>
+          <input id="massi-code" name="code" type="password" autocomplete="off" placeholder="Kirjoita salainen koodi" required>
+          <button class="button" type="submit">Avaa toinen ovi</button>
+          <p class="massi-code-feedback" data-massi-feedback aria-live="polite"></p>
+        </form>
+        <a class="button" href="index.html">Palaa etusivulle</a>
+      </section>
+    </main>
+    <script src="salaisuus.js" defer></script>
+  </body>
+</html>

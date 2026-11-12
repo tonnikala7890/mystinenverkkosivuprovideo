@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#062238">
+    <title>Krottikalan DLC – Salainen verkkosivu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="anglerfish-dlc-page">
+    <main class="anglerfish-world">
+      <a class="anglerfish-back button" href="index.html">← Takaisin etusivulle</a>
+      <header class="anglerfish-page-header">
+        <p class="anglerfish-dlc-eyebrow">KROTTIKALAN SYVÄNNE</p>
+        <div class="anglerfish-page-fish" aria-hidden="true">🐟</div>
+        <h1>Krottikalan DLC</h1>
+        <p>Secrets of Combat and Secrets</p>
+        <p class="anglerfish-page-intro">Kurkista karttaan, avaa Rahan ovi ja hanki kolikkosi. Kun ostat lisäosan, koko syvänteen seikkailu avautuu.</p>
+      </header>
+
+      <nav class="anglerfish-dlc-menu" aria-label="Krottikalan DLC-valikko">
+        <a class="anglerfish-menu-link" href="syvanne.html">🌊 Syvänne <span>Laskeudu rannasta pohjalle</span></a>
+        <a class="anglerfish-menu-link anglerfish-menu-link--door" href="#anglerfish-money-title">🪙 Rahan ovi <span>Salasana: 1000</span></a>
+      </nav>
+
+      <section class="anglerfish-quest-hub" id="quest-hub" aria-labelledby="anglerfish-quest-hub-title">
+        <div>
+          <p class="anglerfish-dlc-eyebrow">KROTTIKALAN PÄIVÄKIRJA</p>
+          <h2 id="anglerfish-quest-hub-title">Salaiset tehtävät</h2>
+          <p>Avaa tehtäväkirja ja auta krottikalaa löytämään syvyyden salaisuudet.</p>
+        </div>
+        <div data-anglerfish-quest-trigger>
+          <p data-quest-hub-locked>Salaiset tehtävät avautuvat, kun Krottikalan DLC on ostettu.</p>
+        </div>
+      </section>
+
+      <section class="anglerfish-world-map" data-anglerfish-world-map aria-labelledby="anglerfish-map-title">
+        <div class="anglerfish-map-heading">
+          <div>
+            <p class="anglerfish-dlc-eyebrow">SEIKKAILUKARTTA</p>
+            <h2 id="anglerfish-map-title">Syvyyksien kartta</h2>
+          </div>
+          <span class="anglerfish-map-compass" aria-hidden="true">✦<br><small>N</small></span>
+        </div>
+        <div class="anglerfish-map-board">
+          <div class="anglerfish-map-route" aria-hidden="true"></div>
+          <a class="anglerfish-map-location anglerfish-map-location--den" href="syvanne.html" data-map-locked>
+            <span class="anglerfish-map-icon" aria-hidden="true">🐟</span>
+            <h3>Krottikalan syvänne</h3>
+            <p>Lisäosan seikkailut ja tehtävälinja</p>
+            <span class="anglerfish-map-lock" aria-hidden="true">🔒</span>
+          </a>
+          <a class="anglerfish-map-location anglerfish-map-location--combat" href="taistelusola.html" data-map-locked>
+            <span class="anglerfish-map-icon" aria-hidden="true">⚔️</span>
+            <h3>Taistelusola</h3>
+            <p>Raivaa viisi vihollisaaltoa ja kukista kaksi syvyyspomoa.</p>
+            <span class="anglerfish-map-lock" aria-hidden="true">🔒</span>
+          </a>
+          <section class="anglerfish-money-door" aria-labelledby="anglerfish-money-title">
+            <span class="anglerfish-money-door-icon" aria-hidden="true">🚪🪙</span>
+            <div>
+              <p class="anglerfish-map-label">AVOIN REITTI</p>
+              <h3 id="anglerfish-money-title">Rahan ovi</h3>
+              <p>Syötä salasana <strong>1000</strong>, niin saat heti 1 000 kolikkoa. Palkinnon voi lunastaa kerran.</p>
+            </div>
+            <form class="anglerfish-money-form" data-anglerfish-money-form>
+              <label for="anglerfish-money-code">Oven salasana</label>
+              <input id="anglerfish-money-code" type="text" inputmode="numeric" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="4" aria-describedby="anglerfish-money-feedback" required>
+              <button class="anglerfish-dlc-buy" type="submit">Lunasta 1 000 kolikkoa</button>
+            </form>
+            <p class="anglerfish-money-feedback" id="anglerfish-money-feedback" data-anglerfish-money-feedback aria-live="polite"></p>
+          </section>
+        </div>
+        <p class="anglerfish-map-legend"><span>✦</span> Lukitut paikat avautuvat DLC:n ostamisen jälkeen.</p>
+      </section>
+    </main>
+    <script src="salaisuus.js" defer></script>
+  </body>
+</html>

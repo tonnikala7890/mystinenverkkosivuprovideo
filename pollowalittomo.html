@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11142b">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Pöllön vipukammiot – O järjestö</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="salaisuus.js" defer></script>
+    <script src="pollowalittomo.js" defer></script>
+  </head>
+  <body class="owl-chamber-page">
+    <main class="owl-chamber-app" data-owl-chambers>
+      <header class="owl-chamber-header">
+        <a class="button owl-chamber-return" href="valotemppeli.html">Takaisin pöllöpuulle</a>
+        <p class="owl-chamber-eyebrow">SALAINEN KIRJA · KUUVALON ALAPUOLISET HUONEET</p>
+        <h1>Pöllön kymmenen vipukammiota</h1>
+        <p>Jokaisessa huoneessa on kymmenen vipua ja kolme salaisuutta. Ensimmäinen vipu avaa seuraavan huoneen, muut paljastavat uusia vihjeitä.</p>
+        <div class="owl-chamber-progress" aria-label="Tutkimisen edistyminen">
+          <span data-lever-progress>Vipuja: 0 / 100</span>
+          <span data-secret-progress>Salaisuuksia: 0 / 30</span>
+        </div>
+      </header>
+
+      <div class="owl-chamber-layout">
+        <nav class="owl-room-map" aria-label="Kymmenen toisiinsa liittyvää kammiota">
+          <h2>Huoneiden kehä</h2>
+          <p>Vierekkäiset huoneet liittyvät toisiinsa. Vedä ensimmäistä vipua avataksesi seuraavan oven.</p>
+          <div class="owl-room-map-grid" data-room-map></div>
+          <p class="owl-room-map-note" data-map-status role="status" aria-live="polite">Aloitat ensimmäisestä huoneesta.</p>
+        </nav>
+
+        <section class="owl-chamber-room" aria-labelledby="room-title">
+          <div class="owl-room-art" data-room-art aria-hidden="true">
+            <div class="owl-room-window"><span></span></div>
+            <div class="owl-room-shelves"><i></i><i></i><i></i></div>
+            <div class="owl-room-owl">🦉</div>
+            <div class="owl-room-floor"></div>
+          </div>
+          <header class="owl-room-heading">
+            <p class="owl-chamber-eyebrow" data-room-number>HUONE 01 / 10</p>
+            <h2 id="room-title" data-room-title>Kuun kirjasto</h2>
+            <p data-room-description>Hiljainen huone odottaa tutkijaansa.</p>
+          </header>
+
+          <div class="owl-room-actions">
+            <p class="owl-chamber-eyebrow">VEDÄ VIPUJA JA ETSI VIHJEITÄ</p>
+            <div class="owl-room-lever-grid" data-room-levers aria-label="Huoneen kymmenen vipua"></div>
+            <p class="owl-room-route-status" data-room-lever-status role="status" aria-live="polite">Jokainen vipu paljastaa vihjeen. Ensimmäinen avaa tien seuraavaan huoneeseen.</p>
+            <p class="owl-room-route-status" data-room-route-status role="status" aria-live="polite">Ensimmäinen vipu avaa seuraavan kammion oven.</p>
+          </div>
+
+          <section class="owl-room-secrets" aria-labelledby="room-secrets-title">
+            <div>
+              <p class="owl-chamber-eyebrow">PIILOTETUT JÄLJET</p>
+              <h3 id="room-secrets-title">Huoneen salaisuudet</h3>
+            </div>
+            <div class="owl-room-secret-list" data-room-secrets></div>
+            <p class="owl-room-secret-status" data-secret-status role="status" aria-live="polite">Tutki huoneen kolme hohtavaa merkkiä.</p>
+          </section>
+
+          <nav class="owl-room-neighbors" aria-label="Siirry viereiseen huoneeseen">
+            <button class="owl-neighbor-button" data-previous-room type="button">← Edellinen huone</button>
+            <span data-neighbor-status>Huoneet muodostavat sulkeutuvan kehän.</span>
+            <button class="owl-neighbor-button" data-next-room type="button">Seuraava huone →</button>
+          </nav>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

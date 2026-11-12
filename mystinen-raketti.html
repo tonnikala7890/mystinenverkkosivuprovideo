@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#070d24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Mystinen raketti – O järjestö</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="kuvake-192.png">
+    <script src="portaali.js" defer></script>
+    <script src="salaisuus.js" defer></script>
+    <script src="raketti.js" defer></script>
+    <script src="kaupunki.js" defer></script>
+    <script src="pwa.js" defer></script>
+  </head>
+  <body class="rocket-page">
+    <main class="rocket-main">
+      <a class="button rocket-back-link" href="tila.html">← Takaisin</a>
+      <header class="rocket-header">
+        <p class="rocket-eyebrow">4K-SEIKKAILU · TÄHTIEN TAAKSE</p>
+        <h1>Mystinen raketti</h1>
+        <p class="rocket-intro" data-journey-status role="status" aria-live="polite">Lähtölupa odottaa. Valitse laukaisu, kun olet valmis.</p>
+      </header>
+
+      <section class="rocket-stage launch-stage" data-launch-stage aria-labelledby="launch-title">
+        <div class="starfield" aria-hidden="true"></div>
+        <div class="launch-moon" aria-hidden="true"></div>
+        <div class="launch-platform">
+          <div class="rocket-art" data-rocket-art aria-hidden="true">
+            <div class="rocket-fin rocket-fin-left"></div>
+            <div class="rocket-fin rocket-fin-right"></div>
+            <div class="rocket-window"></div>
+            <div class="rocket-nose"></div>
+            <div class="rocket-body"><span>O</span></div>
+            <div class="rocket-flame"><i></i><i></i><i></i></div>
+          </div>
+          <div class="launch-pad" aria-hidden="true"><span>LAUKAISUALUSTA 04</span></div>
+          <div class="launch-console">
+            <p class="launch-console-label" id="launch-title">LÄHTÖJÄRJESTELMÄ</p>
+            <p class="launch-countdown" data-countdown aria-live="assertive">VALMIS</p>
+            <button class="button launch-button" data-launch-button type="button">LAUKAISE</button>
+          </div>
+        </div>
+        <p class="launch-caption">Turvavyöt kiinni · tähtireitti: Maan kiertorata → mystinen pyramidi</p>
+      </section>
+
+      <section class="rocket-stage orbit-stage" data-orbit-stage aria-label="Rakettimatka Maan ympäri" hidden>
+        <video class="launch-footage" data-launch-video playsinline muted preload="auto" aria-label="Kymmenen sekunnin rakettilaukaisuvideo, jossa on puheettomat rakettiäänitehosteet">
+          <source src="assets/rocket-launch.mp4" type="video/mp4">
+        </video>
+        <p class="launch-footage-caption" data-launch-video-caption aria-live="polite">Laukaisu käynnistyy · videon puhe on mykistetty</p>
+        <div class="orbit-stars" aria-hidden="true"></div>
+        <div class="orbit-sun" aria-hidden="true"></div>
+        <div class="planet-earth" aria-hidden="true"><span></span></div>
+        <div class="orbit-ring" aria-hidden="true"><div class="orbit-rocket rocket-art"><div class="rocket-window"></div><div class="rocket-nose"></div><div class="rocket-body"></div><div class="rocket-flame"><i></i><i></i><i></i></div></div></div>
+        <div class="orbit-copy"><p class="rocket-eyebrow">TÄHTIPÖLYN LÄPI</p><h2>Maa jää taakse</h2><p>Raketti kiertää sinisen planeetan ja suuntaa kohti tuntematonta.</p></div>
+      </section>
+
+      <section class="rocket-stage pyramid-stage" data-pyramid-stage aria-labelledby="pyramid-title" hidden>
+        <div class="pyramid-sky" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="pyramid-landscape" aria-hidden="true"></div>
+        <div class="pyramid-art" aria-hidden="true">
+          <div class="pyramid-glow"></div>
+          <div class="pyramid-triangle"><span class="pyramid-door"></span><span class="pyramid-eye">✦</span></div>
+          <div class="pyramid-ground"></div>
+        </div>
+        <div class="pyramid-copy"><p class="rocket-eyebrow">LASKEUTUMINEN VALMIS</p><h2 id="pyramid-title">Kuun muinainen pyramidi</h2><p>Raketti laskeutuu hiekan ylle. Kivinen ovi odottaa.</p><button class="button journey-button" data-enter-pyramid type="button">ASTU PYRAMIDIIN</button></div>
+      </section>
+
+      <section class="rocket-stage throne-stage" data-throne-stage aria-labelledby="throne-title" hidden>
+        <div class="temple-stars" aria-hidden="true"></div>
+        <div class="temple-columns" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="throne-room">
+          <p class="rocket-eyebrow">PYRAMIDIN SISIN KAMMIO</p>
+          <h2 id="throne-title">Kuun valtaistuin</h2>
+          <div class="throne" aria-hidden="true"><span class="throne-crown">✦</span><span class="throne-seat"></span><span class="throne-base"></span></div>
+          <p class="throne-hint">Valtaistuimen vieressä odottaa vanha vipu.</p>
+          <button class="button lever-button" data-pull-lever type="button"><span aria-hidden="true">↧</span> VEDÄ VIPUA</button>
+        </div>
+        <div class="temple-floor" aria-hidden="true"><span class="floor-seam"></span><span class="floor-slab"></span></div>
+        <div class="drop-figure" data-drop-figure aria-hidden="true">✦</div>
+      </section>
+
+      <section class="rocket-stage underworld-stage" data-underworld-stage aria-labelledby="altar-title" hidden>
+        <div class="underground-rocks" aria-hidden="true"></div>
+        <div class="soul-stream" aria-hidden="true">
+          <span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>✦</span><span>✧</span>
+          <span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>✦</span><span>✧</span>
+        </div>
+        <div class="altar-scene">
+          <p class="rocket-eyebrow">SYVÄLLÄ PYRAMIDIN ALLA</p>
+          <h2 id="altar-title">Sielujen sali</h2>
+          <p class="altar-intro">Siniset sieluvalot virtaavat maan uumenista muinaiselle alttarille.</p>
+          <div class="mystic-altar" aria-hidden="true">
+            <span class="altar-halo"></span><span class="altar-crystal"></span>
+            <span class="altar-top"></span><span class="altar-stem"></span><span class="altar-base"></span>
+          </div>
+          <button class="button altar-button" data-touch-altar type="button">KOSKETA ALTTARIA</button>
+          <p class="altar-status" data-altar-status role="status" aria-live="polite">Alttari odottaa kosketustasi.</p>
+        </div>
+        <div class="altar-beam" data-altar-beam aria-hidden="true">
+          <div class="beam-column"></div>
+          <div class="beam-rings"><i></i><i></i><i></i></div>
+          <p>MUINAINEN VALO HERÄÄ</p>
+        </div>
+      </section>
+
+      <section class="rocket-stage owl-stage" data-owl-stage aria-labelledby="owl-title" hidden>
+        <div class="owl-nebula" aria-hidden="true"></div>
+        <div class="owl-constellations" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="owl-sanctuary">
+          <div class="owl-statue" aria-hidden="true">
+            <div class="owl-aura"></div>
+            <div class="owl-wings"><span></span><span></span></div>
+            <div class="owl-body"><span class="owl-belly"></span></div>
+            <div class="owl-head"><span class="owl-ear owl-ear-left"></span><span class="owl-ear owl-ear-right"></span><span class="owl-eye owl-eye-left"><i></i></span><span class="owl-eye owl-eye-right"><i></i></span><span class="owl-beak"></span></div>
+            <div class="owl-feet"><span></span><span></span><span></span></div>
+          </div>
+          <div class="owl-dialogue" data-owl-dialogue role="status" aria-live="polite">
+            <p class="rocket-eyebrow">AIKAINEN TIETÄJÄ</p>
+            <h2 id="owl-title">Kaiken tietävä pöllö</h2>
+            <p>“Olet löytänyt sielujen lähteen. Minä vartioin toiveita — ja sinistä ovea.”</p>
+          </div>
+          <div class="owl-quests" aria-label="Pöllön tehtävät">
+            <button class="owl-quest" data-owl-quest="feather" type="button"><span>01</span><strong>Unisulka</strong><small>Nouda kadonnut sulka valokiveltä.</small><b data-quest-mark>ALOITA</b></button>
+            <button class="owl-quest" data-owl-quest="star" type="button"><span>02</span><strong>Tähtikompassi</strong><small>Suunnista kolme taivaan merkkiä oikein.</small><b data-quest-mark>ALOITA</b></button>
+            <button class="owl-quest" data-owl-quest="riddle" type="button"><span>03</span><strong>Hiljaisuuden arvoitus</strong><small>Vastaa tietäjän kysymykseen: mikä kasvaa jakamalla?</small><b data-quest-mark>ALOITA</b></button>
+          </div>
+          <div class="owl-wishes">
+            <p class="rocket-eyebrow">VIISI TOIVETTA · PÖLLÖN ARVOITUKSET OVAT TAIVASVINKKEJÄ</p>
+            <div>
+              <button class="wish-button" data-wish="valo" type="button">Toivo valoa <span>VALITSE</span></button>
+              <button class="wish-button" data-wish="rohkeus" type="button">Toivo rohkeutta <span>VALITSE</span></button>
+              <button class="wish-button" data-wish="koti" type="button">Toivo kotiin <span>VALITSE</span></button>
+              <button class="wish-button" data-wish="viisaus" type="button">Toivo viisautta <span>VALITSE</span></button>
+              <button class="wish-button" data-wish="rauha" type="button">Toivo rauhaa <span>VALITSE</span></button>
+            </div>
+            <form class="wish-code-form" data-wish-form>
+              <label for="owl-wish-code">Pöllön salainen sana</label>
+              <input id="owl-wish-code" data-wish-code type="password" autocomplete="off" spellcheck="false" required aria-describedby="wish-hint">
+              <button class="button wish-submit" type="submit">ESITÄ TOIVE</button>
+            </form>
+            <p id="wish-hint" class="wish-hint" data-wish-hint>Valitse toive, niin pöllö antaa siihen arvoituksen.</p>
+            <p data-wish-status role="status" aria-live="polite">Pöllö kuuntelee toiveitasi.</p>
+          </div>
+          <button class="blue-owl-door" data-blue-door type="button" disabled>
+            <span class="blue-door-lintel">PÖLLÖN SINETTI</span>
+            <span class="blue-door-art"><i></i><i></i><b>✦</b></span>
+            <span class="blue-door-label" data-blue-door-label>Suorita kolme tehtävää avataksesi</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="rocket-stage coin-stage" data-coin-stage aria-labelledby="coin-title" hidden>
+        <div class="coin-stars" aria-hidden="true"></div>
+        <div class="coin-chamber">
+          <p class="rocket-eyebrow">SINISEN OVEN TAKANA</p>
+          <h2 id="coin-title">Yhden kolikon kammio</h2>
+          <p>Pöllö kuiskaa: “Ota vain se, minkä olet valmis menettämään.”</p>
+          <button class="single-coin" data-take-coin type="button" aria-label="Ota ainoa kolikko">
+            <span>1</span><small>KOLIKKO</small>
+          </button>
+          <p class="coin-status" data-coin-status role="status" aria-live="polite">Kolikko lepää kivisellä jalustalla.</p>
+          <div class="second-gate" data-second-gate hidden>
+            <p class="owl-quote">“Mitä sinä oikein avaat?”</p>
+            <p>Lattia romahti. Toinen portti avautuu — sen takana odottaa Pöllökaupunki.</p>
+            <button class="button city-gate-button" data-city-gate type="button">ASTU TOISESTA PORTISTA</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="rocket-stage owl-city-stage" data-city-stage aria-labelledby="city-title" hidden>
+        <div class="city-dawn" aria-hidden="true"></div>
+        <div class="owl-city-skyline" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="owl-cathedral">
+          <div class="cathedral-towers"><span></span><span></span></div>
+          <div class="cathedral-front">
+            <div class="cathedral-window"><i></i><i></i><i></i></div>
+            <div class="cathedral-rose">✦</div>
+            <div class="cathedral-door"></div>
+          </div>
+          <div class="cathedral-steps"></div>
+        </div>
+        <button class="city-cathedral-gate" data-open-city-gate type="button" disabled>
+          <span class="city-gate-door city-gate-left"></span>
+          <span class="city-gate-door city-gate-right"></span>
+          <span class="city-gate-caption" data-city-gate-caption>Suorita kirkon tehtävät avataksesi</span>
+        </button>
+        <div class="city-story">
+          <p class="rocket-eyebrow">KAUKANA KUUVALTAKUNNASSA</p>
+          <h2 id="city-title">Pöllökaupunki</h2>
+          <p>Hopeakattoinen tähtikirkko kohoaa kaupungin ylle. Sen pöllöasukkaat tarvitsevat apua.</p>
+        </div>
+        <div class="city-quest-board">
+          <h3>Kirkon tehtävät</h3>
+          <button data-city-quest="lantern" type="button"><span>✦</span><strong>Sytytä kuulyhdyt</strong><small>Palauta valo kirkon kolmeen lyhtyyn.</small><b>ALOITA</b></button>
+          <button data-city-quest="archive" type="button"><span>⌘</span><strong>Arkiston kadonnut sivu</strong><small>Auta kirjastonhoitajaa löytämään tähtikartta.</small><b>ALOITA</b></button>
+          <button data-city-quest="choir" type="button"><span>♫</span><strong>Pöllökuoron kutsu</strong><small>Opettele aamulaulu kaupungin kuorolaisilta.</small><b>ALOITA</b></button>
+          <p class="city-quest-status" data-city-quest-status role="status" aria-live="polite">Kaupungin pöllöt odottavat sankarin apua.</p>
+        </div>
+        <div class="city-owl" aria-hidden="true"><span>◉ ◉</span><i>⌄</i></div>
+      </section>
+
+      <section class="rocket-stage city-game-stage" data-city-game-stage aria-labelledby="city-game-title" hidden>
+        <header class="city-game-header">
+          <div>
+            <p class="rocket-eyebrow">PÖLLÖKAUPUNGIN VAPAAT KADUT</p>
+            <h2 id="city-game-title">Lähde tutkimaan kaupunkia</h2>
+          </div>
+          <div class="city-game-actions">
+            <p class="city-game-hint">Liiku A/D- tai nuolinäppäimillä · hyppää välilyönnillä</p>
+            <button class="city-home-teleport" data-city-home-teleport type="button">SÄDE VERKKOSIVULLE</button>
+          </div>
+        </header>
+        <div class="city-game-frame">
+          <canvas class="city-game-canvas" data-city-canvas tabindex="0" role="img" aria-label="Pelattava sivusta kuvattu Pöllökaupunki. Käytä nuolinäppäimiä tai A ja D liikkumiseen sekä välilyöntiä hyppäämiseen.">Pöllökaupunki-peli vaatii selaimen, joka tukee canvas-grafiikkaa.</canvas>
+          <button class="temple-portal-button" data-temple-portal type="button">✦ VALONSÄDE · TEMPPELIIN ✦</button>
+          <div class="city-game-hud">
+            <span data-city-position>Keskustori</span>
+            <span><b data-star-count>0</b> / 24 tähtikristallia</span>
+          </div>
+        </div>
+        <div class="city-game-controls" aria-label="Pelin kosketusohjaimet">
+          <button data-game-left type="button" aria-label="Liiku vasemmalle">◀</button>
+          <button data-game-right type="button" aria-label="Liiku oikealle">▶</button>
+          <button data-game-jump type="button" aria-label="Hyppää">HYPPÄÄ</button>
+          <button data-game-talk type="button" aria-label="Puhu lähellä olevalle pöllölle">PUHU</button>
+        </div>
+        <p class="city-game-status" data-city-game-status role="status" aria-live="polite">Tutki katuja, kerää tähtikristalleja ja juttele kaupungin pöllöille.</p>
+      </section>
+
+      <section class="city-temple-stage" data-city-temple aria-labelledby="temple-title" hidden>
+        <div class="temple-starfield" aria-hidden="true"></div>
+        <div class="temple-ray" aria-hidden="true"></div>
+        <div class="temple-ruins temple-ruins-left" aria-hidden="true"></div>
+        <div class="temple-ruins temple-ruins-right" aria-hidden="true"></div>
+        <div class="temple-interior">
+          <p class="rocket-eyebrow">KAUPUNGIN VALOSÄTEEN PÄÄSSÄ</p>
+          <h2 id="temple-title">Kalkkunatemppeli</h2>
+          <p class="temple-description">Kultainen valo johdatti sinut muinaiseen temppeliin. Kalkkuna vartioi jalustalla lepäävää pokaalia.</p>
+          <div class="temple-turkey" role="img" aria-label="Temppelin kalkkunavartija">
+            <span class="turkey-tail turkey-tail-one"></span><span class="turkey-tail turkey-tail-two"></span><span class="turkey-tail turkey-tail-three"></span>
+            <span class="turkey-body"></span><span class="turkey-neck"></span><span class="turkey-head"></span><span class="turkey-beak"></span><span class="turkey-wattle"></span>
+            <span class="turkey-eye"></span><span class="turkey-feet"></span>
+          </div>
+          <div class="temple-trophy-display">
+            <span class="temple-trophy-rays" aria-hidden="true"></span>
+            <span class="temple-trophy" aria-hidden="true">✦</span>
+            <span class="temple-trophy-stem" aria-hidden="true"></span>
+            <span class="temple-trophy-base" aria-hidden="true"></span>
+          </div>
+          <p class="temple-guardian-line">Kalkkuna kujertaa: “Pokaali on kaunis, mutta temppeli ei pidä kiireisistä vieraista.”</p>
+          <button class="button temple-trophy-button" data-trophy type="button">OTA POKAALI</button>
+          <button class="button temple-escape-button" data-temple-escape type="button" disabled>PAKENE VALON LUO</button>
+          <p class="temple-status" data-temple-status role="status" aria-live="polite">Lähesty jalustaa ja päätä, uskallatko ottaa pokaalin.</p>
+          <button class="city-home-teleport temple-home-teleport" data-city-home-teleport type="button">TELEPORTTAA VERKKOSIVULLE</button>
+        </div>
+      </section>
+    </main>
+    <div class="city-teleport-overlay" data-city-teleport hidden aria-hidden="true">
+      <video class="city-teleport-video" data-city-teleport-video muted playsinline preload="auto" aria-hidden="true">
+        <source src="assets/portal-arrival.mp4" type="video/mp4">
+      </video>
+      <div class="city-teleport-orbit city-teleport-orbit-one"></div>
+      <div class="city-teleport-orbit city-teleport-orbit-two"></div>
+      <div class="city-teleport-core"></div>
+      <p data-city-teleport-label aria-live="polite">Valonsäde kantaa sinut temppeliin</p>
+    </div>
+  </body>
+</html>

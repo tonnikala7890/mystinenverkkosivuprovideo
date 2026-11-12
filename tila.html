@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#381019">
+    <title>Tilat ja suojattu painike – O järjestö</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="salaisuus.js" defer></script>
+    <script src="tila.js" defer></script>
+  </head>
+  <body class="protected-page">
+    <main class="landing protected-landing">
+      <section class="protected-panel" aria-labelledby="protected-title">
+        <a class="button protected-back-link" href="index.html">← Etusivulle</a>
+        <p class="protected-eyebrow">O JÄRJESTÖ · ERIKOISALUE</p>
+        <h1 id="protected-title">Valitse tila</h1>
+        <p class="protected-intro">Vaihda sivuston tavallisen ja salaisen tilan välillä.</p>
+
+        <div class="mode-switch" role="group" aria-label="Sivuston tila">
+          <button class="button mode-choice" data-mode-normal type="button" aria-pressed="false">Normaali tila</button>
+          <button class="button mode-choice" data-mode-secret type="button" aria-pressed="false">Salainen tila</button>
+        </div>
+        <p class="mode-status" data-mode-status role="status" aria-live="polite"></p>
+
+        <div class="protected-divider" aria-hidden="true"><span>◆</span></div>
+
+        <p class="protected-eyebrow">SUOJATTU KOEKAPPALE 01</p>
+        <h2 class="dome-heading">Älä koske</h2>
+        <p class="dome-description">Varoituspainike on lasikuvun alla. Kupu on lukittu.</p>
+
+        <div class="dome-scene">
+          <div class="glass-dome" data-glass-dome>
+            <button
+              class="dome-cover"
+              data-dome-cover
+              type="button"
+              aria-expanded="false"
+              aria-controls="warning-button">
+              <span class="dome-cover-label">SUOJAKUPU</span>
+              <span class="dome-cover-hint">Avaa vain jos todella haluat</span>
+            </button>
+            <button class="red-warning-button" id="warning-button" data-warning-button type="button" disabled>
+              <span class="warning-light" aria-hidden="true"></span>
+              <span>ÄLÄ KOSKE</span>
+              <small>4K-MATKA</small>
+            </button>
+          </div>
+          <div class="dome-pedestal" aria-hidden="true">
+            <span>VAIN HÄTÄTILANTEESSA</span>
+          </div>
+        </div>
+        <p class="dome-status" data-dome-status role="status" aria-live="polite">Suojakupu kiinni · painike lukittu</p>
+        <div class="alarm-overlay" data-alarm-overlay aria-hidden="true">
+          <div class="alarm-beacons" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="alarm-message" role="status" aria-live="assertive">
+            <p>HÄLYTYS</p>
+            <h2>4K-KOE KÄYNNISTYY</h2>
+            <span>Valmistaudu matkaan</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111a3b">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Pöllökaupunki – O järjestö</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="kuvake-192.png">
+    <script src="portaali.js" defer></script>
+    <script src="salaisuus.js" defer></script>
+    <script src="kaupunki.js" defer></script>
+    <script src="pwa.js" defer></script>
+  </head>
+  <body class="rocket-page city-direct-page" data-city-direct="true">
+    <main class="rocket-main city-direct-main">
+      <section class="rocket-stage city-game-stage" data-city-game-stage aria-labelledby="city-game-title">
+        <header class="city-game-header">
+          <div>
+            <p class="rocket-eyebrow">KUUVALTAKUNNAN SALAINEN PORTAALI</p>
+            <h1 id="city-game-title">Pöllökaupunki</h1>
+          </div>
+          <div class="city-game-actions">
+            <p class="city-game-hint">Liiku A/D- tai nuolinäppäimillä · hyppää välilyönnillä · E tutkii</p>
+            <button class="city-home-teleport" data-city-home-teleport type="button">SÄDE VERKKOSIVULLE</button>
+          </div>
+        </header>
+        <div class="city-game-frame">
+          <canvas class="city-game-canvas" data-city-canvas tabindex="0" role="img" aria-label="Pelattava sivusta kuvattu Pöllökaupunki. Käytä nuolinäppäimiä tai A ja D liikkumiseen, välilyöntiä hyppäämiseen ja E-näppäintä tutkimiseen.">Pöllökaupunki-peli vaatii selaimen, joka tukee canvas-grafiikkaa.</canvas>
+          <button class="temple-portal-button" data-temple-portal type="button">✦ VALONSÄDE · TEMPPELIIN ✦</button>
+          <div class="city-game-hud">
+            <span data-city-position>Kuun lyhtykatu</span>
+            <span><b data-star-count>0</b> / 24 tähtikristallia</span>
+          </div>
+        </div>
+        <div class="city-game-controls" aria-label="Pelin kosketusohjaimet">
+          <button data-game-left type="button" aria-label="Liiku vasemmalle">◀</button>
+          <button data-game-right type="button" aria-label="Liiku oikealle">▶</button>
+          <button data-game-jump type="button" aria-label="Hyppää">HYPPÄÄ</button>
+          <button data-game-talk type="button" aria-label="Puhu tai tutki lähellä olevaa kohdetta">TUTKI</button>
+        </div>
+        <p class="city-game-status" data-city-game-status role="status" aria-live="polite">Etsi kaupungin keskeltä valonsäde. Paina E tai TUTKI avataksesi temppelin portaalin.</p>
+      </section>
+
+      <section class="city-temple-stage" data-city-temple aria-labelledby="temple-title" hidden>
+        <div class="temple-starfield" aria-hidden="true"></div>
+        <div class="temple-ray" aria-hidden="true"></div>
+        <div class="temple-ruins temple-ruins-left" aria-hidden="true"></div>
+        <div class="temple-ruins temple-ruins-right" aria-hidden="true"></div>
+        <div class="temple-interior">
+          <p class="rocket-eyebrow">KAUPUNGIN VALOSÄTEEN PÄÄSSÄ</p>
+          <h2 id="temple-title">Kalkkunatemppeli</h2>
+          <p class="temple-description">Kultainen valo johdatti sinut muinaiseen temppeliin. Kalkkuna vartioi jalustalla lepäävää pokaalia.</p>
+          <div class="temple-turkey" role="img" aria-label="Temppelin kalkkunavartija">
+            <span class="turkey-tail turkey-tail-one"></span><span class="turkey-tail turkey-tail-two"></span><span class="turkey-tail turkey-tail-three"></span>
+            <span class="turkey-body"></span><span class="turkey-neck"></span><span class="turkey-head"></span><span class="turkey-beak"></span><span class="turkey-wattle"></span>
+            <span class="turkey-eye"></span><span class="turkey-feet"></span>
+          </div>
+          <div class="temple-trophy-display">
+            <span class="temple-trophy-rays" aria-hidden="true"></span>
+            <span class="temple-trophy" aria-hidden="true">✦</span>
+            <span class="temple-trophy-stem" aria-hidden="true"></span>
+            <span class="temple-trophy-base" aria-hidden="true"></span>
+          </div>
+          <p class="temple-guardian-line">Kalkkuna kujertaa: “Pokaali on kaunis, mutta temppeli ei pidä kiireisistä vieraista.”</p>
+          <button class="button temple-trophy-button" data-trophy type="button">OTA POKAALI</button>
+          <button class="button temple-escape-button" data-temple-escape type="button" disabled>PAKENE VALON LUO</button>
+          <p class="temple-status" data-temple-status role="status" aria-live="polite">Lähesty jalustaa ja päätä, uskallatko ottaa pokaalin.</p>
+          <button class="city-home-teleport temple-home-teleport" data-city-home-teleport type="button">TELEPORTTAA VERKKOSIVULLE</button>
+        </div>
+      </section>
+    </main>
+    <div class="city-teleport-overlay" data-city-teleport hidden aria-hidden="true">
+      <video class="city-teleport-video" data-city-teleport-video muted playsinline preload="auto" aria-hidden="true">
+        <source src="assets/portal-arrival.mp4" type="video/mp4">
+      </video>
+      <div class="city-teleport-orbit city-teleport-orbit-one"></div>
+      <div class="city-teleport-orbit city-teleport-orbit-two"></div>
+      <div class="city-teleport-core"></div>
+      <p data-city-teleport-label aria-live="polite">Valonsäde kantaa sinut temppeliin</p>
+    </div>
+  </body>
+</html>

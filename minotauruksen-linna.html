@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#100d1c">
+    <title>Minotauruksen linna – Ikuisuuden oven takana</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="minotaur-page">
+    <section class="minotaur-password-gate" data-minotaur-gate aria-labelledby="minotaur-gate-title">
+      <div class="minotaur-wall" aria-hidden="true">
+        <span class="minotaur-wall-piece minotaur-wall-piece--left"></span>
+        <span class="minotaur-wall-piece minotaur-wall-piece--center"></span>
+        <span class="minotaur-wall-piece minotaur-wall-piece--right"></span>
+        <span class="minotaur-wall-crack"></span>
+      </div>
+      <div class="minotaur-gate-card">
+        <a class="minotaur-return" href="syvanne.html#eternity-door">← Takaisin Ikuisuuden ovelle</a>
+        <p class="minotaur-eyebrow">IKUISUUDEN OVEN TAKANA</p>
+        <div class="minotaur-key-art" aria-hidden="true">🗝️</div>
+        <h1 id="minotaur-gate-title">Kivimuuri</h1>
+        <p class="minotaur-riddle">Ovi räjäytti lukon, mutta vanha muuri on yhä tiellä. Sen takana kaikuu sarvien kopse. Mikä olento vartioi linnaa?</p>
+        <form class="minotaur-password-form" data-minotaur-password-form>
+          <label for="minotaur-password">Muurin salasana</label>
+          <input id="minotaur-password" name="password" type="password" autocomplete="off" required>
+          <button type="submit">Murra kivimuuri</button>
+        </form>
+        <p class="minotaur-gate-feedback" data-minotaur-password-feedback aria-live="polite"></p>
+      </div>
+    </section>
+
+    <main class="minotaur-world" data-minotaur-world hidden>
+      <a class="minotaur-return minotaur-world-return" href="syvanne.html#eternity-door">← Takaisin Syvänteeseen</a>
+      <header class="minotaur-hero">
+        <p class="minotaur-eyebrow">SEIKKAILU IKUISUUDEN OVEN TAKANA</p>
+        <div class="minotaur-hero-symbol" aria-hidden="true">🌀</div>
+        <h1 tabindex="-1">Minotauruksen linna</h1>
+        <p>Muuri sortui ja paljasti muinaisen maailman. Avoimet kivisalit, vihollisaallot ja suuri taisteluareena odottavat.</p>
+        <a href="#first-hall" class="minotaur-descent">Astu linnaan <span aria-hidden="true">↓</span></a>
+      </header>
+
+      <section class="minotaur-place minotaur-place--hall" id="first-hall">
+        <p class="minotaur-eyebrow">ENSIMMÄINEN PAIKKA · KIVIEN KAIKU</p>
+        <h2>Unohdettu eteishalli</h2>
+        <p>Sortuneen muurin pölyssä avautuu ensimmäinen suuri kivisali. Vanha pronssikello kutsuu eteenpäin.</p>
+        <span class="minotaur-place-mark" aria-hidden="true">🛡️</span>
+        <a href="#root-garden" class="minotaur-next">Seuraa kellon ääntä ↓</a>
+      </section>
+
+      <section class="minotaur-place minotaur-place--garden" id="root-garden">
+        <p class="minotaur-eyebrow">TOINEN PAIKKA · KASVAVA KIVI</p>
+        <h2>Juurtunut puutarha</h2>
+        <p>Linnan kivien lomasta kasvaa hopealehtisiä puita. Niiden oksille on ripustettu vanhoja kartanpaloja.</p>
+        <span class="minotaur-place-mark" aria-hidden="true">🌿</span>
+        <a href="#echo-bridge" class="minotaur-next">Ylitä kaikujen silta ↓</a>
+      </section>
+
+      <section class="minotaur-place minotaur-place--bridge" id="echo-bridge">
+        <p class="minotaur-eyebrow">KOLMAS PAIKKA · POHJATON KUILU</p>
+        <h2>Kaikujen silta</h2>
+        <p>Sillan alla ei näy pohjaa. Askeleesi vastaavat kaukaa, ja jokainen kaiku kuulostaa yhä enemmän raskailta askelilta.</p>
+        <span class="minotaur-place-mark" aria-hidden="true">🌉</span>
+        <a href="#arena" class="minotaur-next">Kulje kohti viimeistä porttia ↓</a>
+      </section>
+
+      <section class="minotaur-place minotaur-place--arena" id="arena">
+        <p class="minotaur-eyebrow">NELJÄS PAIKKA · TAISTELUAREENA</p>
+        <h2>Hiljainen areena</h2>
+        <p>Pyöreän salin keskellä palaa sininen tuli. Sen takana kohoaa musta linna, jonka porttia vartioi kivinen minotaurus.</p>
+        <span class="minotaur-place-mark" aria-hidden="true">🔥</span>
+        <a href="#castle-gate" class="minotaur-next">Saavu Minotauruksen linnalle ↓</a>
+      </section>
+
+      <section class="minotaur-castle-approach" id="castle-gate">
+        <p class="minotaur-eyebrow">LINNAN PORTTI · MINOTAURUKSEN LINNA</p>
+        <div class="minotaur-castle-art" aria-hidden="true">🏰</div>
+        <h2>Linnan viimeinen ovi</h2>
+        <p>Kahden kivihärän välissä on raskas ovi. Kun se avautuu, pääset Minotauruksen suureen saliin.</p>
+        <button class="minotaur-castle-door" type="button" data-minotaur-castle-door>Avaa linnan ovi</button>
+        <p class="minotaur-castle-message" data-minotaur-castle-message aria-live="polite">Portin takaa kuuluu matala, rauhallinen hengitys.</p>
+        <form class="minos-4k-form" data-minos-4k-form>
+          <label for="minos-4k-code">Valinnainen 4K 3D -tila</label>
+          <div class="minos-4k-form-controls">
+            <input id="minos-4k-code" name="code" type="password" autocomplete="off" placeholder="Syötä 4K-koodi" required>
+            <button class="minotaur-castle-door" type="submit">Avaa 4K 3D -tila</button>
+          </div>
+          <p>Peruspeli toimii ennallaan ilman koodia. 4K-tila käyttää itse rakennettuja 3D-malleja ja piirtää enintään 3840 × 2160 pikseliä näytön ja laitteen suorituskyvyn mukaan. 3D-kirjasto latautuu verkkoyhteydellä.</p>
+        </form>
+        <p class="minos-4k-status" data-minos-4k-status aria-live="polite"></p>
+      </section>
+
+      <section class="minotaur-castle-interior" data-minotaur-castle-interior hidden>
+        <div class="minotaur-castle-welcome">
+          <p class="minotaur-eyebrow">LINNAN SISÄLLÄ</p>
+          <h2>Minoksen suuri sali</h2>
+          <div class="minotaur-king" aria-hidden="true">🐂</div>
+          <p>Portti sulkeutuu takanasi. Lattia aukeaa ja vie sinut Minoksen seikkailuun: kerää kokemusta, kehity, suorita tehtäviä ja valmistaudu kohtaamaan kuningas.</p>
+        </div>
+        <section class="minos-game" data-minos-game hidden aria-label="Minoksen toimintapeli">
+          <header class="minos-game-header">
+            <div>
+              <p class="minotaur-eyebrow">MINOKSEN ROOLIPELISEIKKAILU</p>
+              <h2>Varjokruunun etsintä</h2>
+            </div>
+            <button class="minos-4k-fullscreen" type="button" data-minos-4k-fullscreen hidden>Koko näytön 3D-tila</button>
+            <div class="minos-stats" aria-live="polite">
+              <span data-minos-health>❤️ 100 / 100</span>
+              <span data-minos-room>1 / 50 · Tuhkainen eteishalli</span>
+              <span data-minos-weapon>⚔️ Nyrkit</span>
+              <span data-minos-coins>🪙 0</span>
+              <span data-minos-level>Taso 1</span>
+              <span data-minos-mana>🔷 100 / 100</span>
+              <span data-minos-potions>🧪 2</span>
+            </div>
+          </header>
+          <div class="minos-xp">
+            <div class="minos-xp-label"><span>Kokemus</span><span data-minos-xp-text>0 / 100 XP</span></div>
+            <div class="minos-xp-track" role="progressbar" aria-label="Kokemus seuraavalle tasolle" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-minos-xp-progress><span data-minos-xp-bar></span></div>
+          </div>
+          <p class="minos-quest" data-minos-quest aria-live="polite">Tehtävä: Tyhjennä eteishalli.</p>
+          <p class="minos-instructions">Liiku WASD-näppäimillä. Tähtää hiirellä ja hyökkää oikealla painikkeella. Käytä loitsua E-näppäimellä, parannusjuomaa Q-näppäimellä ja manajuomaa 2-näppäimellä. Kielletty viimeinen terä kutsuu G-näppäimellä sielut, jotka tekevät 1 000 vahinkoa kohteelle. Tyhjennä huoneet, kerää saalis ja päihitä Minotaurus.</p>
+          <div class="minos-arena-wrap">
+            <canvas class="minos-canvas" data-minos-canvas width="960" height="600" tabindex="0" aria-label="Ylhäältä kuvattu taisteluareena. WASD liikuttaa, hiiri tähtää ja oikea painike hyökkää."></canvas>
+            <canvas class="minos-3d-canvas" data-minos-3d-canvas tabindex="0" aria-label="Kolmiulotteinen luolasto. Liiku WASD-näppäimillä ja hyökkää oikealla hiiren painikkeella." hidden></canvas>
+            <div class="minos-overlay" data-minos-overlay hidden>
+              <p class="minotaur-eyebrow" data-minos-overlay-eyebrow></p>
+              <h3 data-minos-overlay-title></h3>
+              <p data-minos-overlay-copy></p>
+              <button class="minotaur-castle-door" type="button" data-minos-overlay-action></button>
+            </div>
+          </div>
+          <div class="minos-touch-controls" aria-label="Kosketusohjaimet">
+            <div class="minos-dpad">
+              <button type="button" data-minos-move="up" aria-label="Liiku ylös">↑</button>
+              <button type="button" data-minos-move="left" aria-label="Liiku vasemmalle">←</button>
+              <button type="button" data-minos-move="down" aria-label="Liiku alas">↓</button>
+              <button type="button" data-minos-move="right" aria-label="Liiku oikealle">→</button>
+            </div>
+            <button type="button" class="minos-touch-attack" data-minos-attack>⚔️ Hyökkää</button>
+            <div class="minos-touch-skills">
+              <button type="button" data-minos-spell>✨ Loitsu (E)</button>
+              <button type="button" data-minos-souls>👻 Sielut · 1 000 (G)</button>
+              <button type="button" data-minos-potion>🧪 Juoma (Q)</button>
+              <button type="button" data-minos-mana-potion>🔷 Manajuoma (2)</button>
+            </div>
+          </div>
+          <p class="minos-status" data-minos-status aria-live="polite">Tyhjennä huone vihollisista avataksesi seuraavan portin.</p>
+        </section>
+      </section>
+      <section class="minos-crown-gate" data-minos-crown-gate hidden aria-labelledby="minos-crown-title">
+        <div class="minos-crown-art" data-minos-crown-art aria-hidden="true">👑</div>
+        <p class="minotaur-eyebrow">MINOTAURUKSEN VIIMEINEN SALAISUUS</p>
+        <h2 id="minos-crown-title">Kruunu ilmestyy tuhkan keskelle</h2>
+        <p>Viimeinen pomo pakenee syvyyksiin. Kruunun takana hohtaa ovi, jota ei olisi koskaan pitänyt löytää.</p>
+        <form class="minos-crown-form" data-minos-crown-form>
+          <label for="minos-crown-password">Kruunun salasana</label>
+          <input id="minos-crown-password" type="password" autocomplete="off" required>
+          <button class="minotaur-castle-door" type="submit">Murra kruunun sinetti</button>
+        </form>
+        <p class="minos-status" data-minos-crown-feedback aria-live="polite"></p>
+      </section>
+      <section class="minos-hidden-route" data-minos-hidden-route hidden>
+        <header class="minos-hidden-hero">
+          <p class="minotaur-eyebrow">REITTI, JOTA EI PITÄNYT OLLA</p>
+          <h2>Unohdettu aseseppien valtakunta</h2>
+          <p>Kruunu räjähti valoksi ja paljasti ikivanhan käytävän. Sen päässä odottavat uusi checkpoint, aseseppä ja pomojen kammio.</p>
+          <nav class="minos-route-navigation" aria-label="Aseseppien valtakunnan pikavalinnat">
+            <a href="#minos-forge">Aseseppien paja</a>
+            <a href="#minos-map-panel">Seikkailukartta</a>
+          </nav>
+        </header>
+        <div class="minos-hidden-places">
+          <article class="minos-hidden-card minos-checkpoint" data-minos-checkpoint>
+            <span aria-hidden="true">🔥</span>
+            <div>
+              <h3>Tuhkakaaren checkpoint</h3>
+              <p>Checkpoint tallentuu automaattisesti. Jos kaadut taisteluluolastossa, jatkat tästä.</p>
+              <strong data-minos-checkpoint-status>Checkpoint aktivoitu</strong>
+            </div>
+          </article>
+          <section class="minos-hidden-card minos-forge" id="minos-forge" aria-labelledby="minos-forge-title">
+            <p class="minotaur-eyebrow">ASESEPÄN PAJA</p>
+            <h3 id="minos-forge-title">Osta aseita kolikoilla</h3>
+            <p class="minos-forge-balance" data-minos-forge-balance>🪙 0 kolikkoa</p>
+            <div class="minos-weapon-shop" data-minos-weapon-shop></div>
+            <h3 class="minos-supplies-title">Seikkailijan tarvikkeet</h3>
+            <div class="minos-weapon-shop" data-minos-supplies-shop></div>
+            <p class="minos-status" data-minos-forge-status aria-live="polite"></p>
+            <section class="minos-owner-vault" aria-labelledby="minos-owner-title">
+              <p class="minotaur-eyebrow">ASESEPÄN KIELLETTY HOLVI</p>
+              <h3 id="minos-owner-title">Ei tänne menoa</h3>
+              <p>Vain omistajan koodi avaa kirotut aseet. Holviin on lisätty entistä voimakkaampia omistajan aseita.</p>
+              <form class="minos-owner-form" data-minos-owner-form>
+                <label for="minos-owner-code">Omistajan salasana</label>
+                <input id="minos-owner-code" type="password" autocomplete="off" required>
+                <button class="minotaur-castle-door" type="submit">Avaa kielletty holvi</button>
+              </form>
+              <p class="minos-owner-feedback" data-minos-owner-feedback aria-live="polite"></p>
+              <div class="minos-weapon-shop minos-owner-shop" data-minos-owner-shop hidden></div>
+            </section>
+          </section>
+          <section class="minos-hidden-card minos-world-map" id="minos-map-panel" aria-labelledby="minos-map-title">
+            <p class="minotaur-eyebrow">SEIKKAILIJAN KARTTA</p>
+            <h3 id="minos-map-title">Linnan syvyyksien kartta</h3>
+            <p>Viisikymmentä kenttää vievät linnan syvyyksistä Ikuisuuden portinvartijan valtaistuimelle. Matkalla kohtaat yhdeksän pomoa, vahvempia vihollisia ja yli 1 000 kestävyyden mestareita.</p>
+            <div class="minos-map-path" data-minos-map aria-label="Seikkailukartta"></div>
+            <p class="minos-status" data-minos-map-status aria-live="polite">Aloita ensimmäisestä avoimesta kentästä.</p>
+          </section>
+          <section class="minos-hidden-card minos-armory" aria-labelledby="minos-armory-title">
+            <p class="minotaur-eyebrow">ASEKOKOELMA</p>
+            <h3 id="minos-armory-title">Aseesi ja niiden harvinaisuus</h3>
+            <ul data-minos-inventory class="minos-weapon-inventory"></ul>
+          </section>
+          <section class="minos-hidden-card minos-trial" aria-labelledby="minos-trial-title">
+            <p class="minotaur-eyebrow">POMOJEN KAMMIO</p>
+            <h3 id="minos-trial-title">Legendaariset aseet putoavat pomoilta</h3>
+            <p>Varjokeisari vartioi kolmannenkymmenennen kentän loppua; viidennenkymmenennen kentän viimeinen pomo on Ikuisuuden portinvartija. Tuhkavartija, Sielunkutoja, Myrskytyranni ja uudet syvyyksien valtiaat vartioivat reittiä.</p>
+            <button class="minotaur-castle-door" type="button" data-minos-boss-trial>Aloita pomokoe</button>
+            <p class="minos-status" data-minos-boss-status aria-live="polite">Voita pomo ansaitaksesi aseen.</p>
+          </section>
+        </div>
+      </section>
+      <p class="minotaur-ending">Jokaisen oven takana odottaa uusi tarina.</p>
+    </main>
+    <script src="salaisuus.js" defer></script>
+    <script src="minoksen-labyrintti.js" defer></script>
+  </body>
+</html>

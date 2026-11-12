@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#381019">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Salainen verkkosivu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="kuvake-192.png">
+    <script src="portaali.js" defer></script>
+    <script src="pwa.js" defer></script>
+  </head>
+  <body>
+    <main class="landing">
+      <nav class="actions" aria-label="Salaisen verkkosivun valikko">
+        <a class="button" href="kauppa.html">Kauppa</a>
+        <a class="button button-secondary" href="salaisuus.html">Salaisuudet</a>
+        <a class="button mode-home-link" href="tila.html">Normaali / salainen tila</a>
+        <a class="button anglerfish-home-link" href="krottikala-dlc.html">Krottikalan DLC</a>
+        <a class="button city-home-portal" href="kaupunki.html">Teleporttaa Pöllökaupunkiin</a>
+        <a class="button light-temple-home-link" href="valotemppeli.html">Mystinen Valotemppeli · vaarallinen portaali</a>
+        <button class="button app-install-button" data-install-app type="button">Asenna sovelluksena</button>
+        <a class="button mystic-home-link" data-mystic-home-link href="mystinen-poro.html" hidden>Mystinen poro</a>
+        <a class="button mystic-home-link" data-lapland-home-link href="lappi.html" hidden>Lappi</a>
+      </nav>
+      <h1 class="landing-title">Salainen verkkosivu</h1>
+      <section class="keyhole-stage" aria-label="Salainen ovi">
+        <button class="keyhole-button" data-keyhole-button type="button" aria-label="Avaa salainen ovi avaimella">
+          <span class="keyhole-shape" aria-hidden="true"></span>
+          <span class="keyhole-caption" data-keyhole-caption>Salainen ovi</span>
+        </button>
+        <p class="keyhole-feedback" data-keyhole-feedback aria-live="polite">Lukossa. Tähän sopii jokin erityinen avain.</p>
+      </section>
+      <a class="easter-egg-trigger" href="salaisuus.html" aria-label="Salaisuus" title="Salaisuus">✦</a>
+      <button class="secret-route-trigger" data-secret-route-trigger type="button" aria-label="Syötä salaisen sinivalaan koodi" title="Salainen reitti">🌊</button>
+      <div class="door-opening-overlay" data-door-overlay aria-hidden="true">
+        <div class="door-opening-light"></div>
+        <p>Avain sopii lukkoon...</p>
+      </div>
+      <p class="app-install-status" data-install-status role="status" aria-live="polite"></p>
+    </main>
+    <div class="city-teleport-overlay" data-city-teleport hidden aria-hidden="true">
+      <video class="city-teleport-video" data-city-teleport-video muted playsinline preload="auto" aria-hidden="true">
+        <source src="assets/portal-arrival.mp4" type="video/mp4">
+      </video>
+      <div class="city-teleport-orbit city-teleport-orbit-one"></div>
+      <div class="city-teleport-orbit city-teleport-orbit-two"></div>
+      <div class="city-teleport-core"></div>
+      <p data-city-teleport-label aria-live="polite">Valonsäde avaa tien Pöllökaupunkiin</p>
+    </div>
+    <script src="salaisuus.js" defer></script>
+  </body>
+</html>

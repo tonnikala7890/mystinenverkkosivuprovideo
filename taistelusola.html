@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#062238">
+    <title>Taistelusola – Krottikalan syvänne</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="anglerfish-combat-page">
+    <main class="anglerfish-combat">
+      <a class="anglerfish-combat-back button" href="krottikala-dlc.html">← Takaisin DLC-karttaan</a>
+      <header class="anglerfish-combat-header">
+        <p class="anglerfish-dlc-eyebrow">KROTTIKALAN SYVÄNNE · TAISTELUALUE</p>
+        <h1>Taistelusola</h1>
+        <p>Viholliset ovat vallanneet kalliosolan. Selviä viidestä aallosta ja pysäytä syvyyden pomot.</p>
+      </header>
+      <section class="combat-game" aria-label="Taistelusolan peli">
+        <div class="combat-hud" aria-live="polite">
+          <strong data-combat-health>❤️ 100 / 100</strong>
+          <strong data-combat-wave>Aalto 1 / 5</strong>
+          <strong data-combat-weapon>⚔️ Harjoitusmiekka</strong>
+          <strong data-combat-coins>🪙 0</strong>
+        </div>
+        <p class="combat-status" data-combat-status>Valmistaudu ensimmäiseen vihollisaaltoon.</p>
+        <div class="combat-arena-wrap">
+          <canvas class="combat-canvas" data-combat-canvas width="960" height="600" tabindex="0" aria-label="Taistelusola. Liiku WASD-näppäimillä ja hyökkää välilyönnillä tai hiiren painikkeella."></canvas>
+          <div class="combat-overlay" data-combat-overlay>
+            <p class="anglerfish-dlc-eyebrow" data-combat-overlay-eyebrow>TAISTELUSOLA</p>
+            <h2 data-combat-overlay-title>Viholliset lähestyvät</h2>
+            <p data-combat-overlay-copy>Aloita taistelu. Voita tavalliset viholliset ennen kuin alueen pomo herää.</p>
+            <button type="button" class="anglerfish-dlc-buy" data-combat-overlay-action>Aloita taistelu</button>
+          </div>
+        </div>
+        <div class="combat-touch-controls" aria-label="Taistelun kosketusohjaimet">
+          <div class="combat-dpad">
+            <button type="button" data-combat-move="up" aria-label="Liiku ylös">↑</button>
+            <button type="button" data-combat-move="left" aria-label="Liiku vasemmalle">←</button>
+            <button type="button" data-combat-move="down" aria-label="Liiku alas">↓</button>
+            <button type="button" data-combat-move="right" aria-label="Liiku oikealle">→</button>
+          </div>
+          <button type="button" class="combat-attack" data-combat-attack>⚔️ Hyökkää</button>
+        </div>
+        <p class="combat-instructions">Liiku WASD- tai nuolinäppäimillä. Tähtää hiirellä ja hyökkää välilyönnillä tai hiiren painikkeella. Pomot ilmestyvät aaltojen 3 ja 5 lopuksi.</p>
+      </section>
+    </main>
+    <script src="salaisuus.js" defer></script>
+    <script src="taistelusola.js" defer></script>
+  </body>
+</html>
